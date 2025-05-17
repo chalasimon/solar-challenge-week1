@@ -1,1 +1,5 @@
-venv/ 
+.venv/
+data/
+*.csv
+.ipynb_checkpoints/
+__pycache__/
