@@ -13,7 +13,7 @@ Follow the steps below to set up the Python development environment and reproduc
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/solar-challenge-week1.git
+git clone https://github.com/chalasimon/solar-challenge-week1.git
 cd solar-challenge-week1
 ```
 ### 2. Create a Virtual Environment
