@@ -33,8 +33,15 @@ pip install -r requirements.txt
 solar-challenge-week1/
 ├── data/
 |
+│── .github/
+│   ├── workflows/
+│   │   ├── ci.yml
+│   │   └── cd.yml
 ├── notebooks/
 │   ├── __init__.py
+│   ├── benin_eda.ipynb
+│   ├── sierra_leone_eda.ipynb
+│   └── togo_eda.ipynb
 ├── src/
 │   ├── __init__.py
 ├── tests/
