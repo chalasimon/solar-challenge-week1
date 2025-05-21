@@ -3,3 +3,9 @@ data/
 *.csv
 .ipynb_checkpoints/
 __pycache__/
+
+# Cleaned data files (must track)
+!data/benin-malanville_clean.csv
+!data/sierraleone-bumbuna_clean.csv
+!data/togo-dapaong_clean.csv
+
