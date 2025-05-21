@@ -28,7 +28,7 @@ source venv/bin/activate (Linux/Mac) or venv\Scripts\activate (Windows)
 pip install -r requirements.txt
 ```
 
-
+### 4. Project Structure
 ```plaintext
 solar-challenge-week1/
 ├── data/
@@ -65,9 +65,8 @@ solar-challenge-week1/
  - For dashboard: `streamlit run app/main.py`
 
 ### Dashboard Deployment
-- Access the live dashboard at:
- 
-### 4. Project Structure
+- Access the live dashboard at: https://solar-challenge-week1-agxve63xtxhtw5ynypxejf.streamlit.app
+
 ### Contact
 For any inquiries or collaboration requests, please reach out to:
 
