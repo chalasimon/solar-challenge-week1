@@ -3,6 +3,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+from utils.plots import plot_boxplot # user defined library 
 
 st.title("Solar Potential Dashboard")
 st.write("This dashboard provides insights into solar potential data.")
@@ -25,10 +26,13 @@ country = st.multiselect(
     options=df['country'].unique(),
     default=df['country'].unique()
 )
+metric = st.selectbox(
+    'Select Metric',
+    ['GHI', 'DNI', 'DHI']
+)
 
 # filtering data based on selected country
 filtered_data = df[df['country'].isin(country)]
 
-
-
-
+# plot filtered data 
+st.pyplot(plot_boxplot(filtered_data, metric))
