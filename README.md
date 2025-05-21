@@ -27,7 +27,7 @@ source venv/bin/activate (Linux/Mac) or venv\Scripts\activate (Windows)
 ```bash
 pip install -r requirements.txt
 ```
-### 4. Project Structure
+
 
 ```plaintext
 solar-challenge-week1/
@@ -42,6 +42,12 @@ solar-challenge-week1/
 │   ├── benin_eda.ipynb
 │   ├── sierra_leone_eda.ipynb
 │   └── togo_eda.ipynb
+├── app/
+│   ├── utils/
+│   │   ├── __init__.py
+│   │   ├── plots.py
+│   └── main.py
+│── dashboard/
 ├── src/
 │   ├── __init__.py
 ├── tests/
@@ -53,6 +59,15 @@ solar-challenge-week1/
 ├── README.md
 └── requirements.txt
 ```
+## Solar Potential Analysis
+
+### How to Reproduce
+ - For dashboard: `streamlit run app/main.py`
+
+### Dashboard Deployment
+- Access the live dashboard at:
+ 
+### 4. Project Structure
 ### Contact
 For any inquiries or collaboration requests, please reach out to:
 
