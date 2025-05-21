@@ -16,11 +16,11 @@ Follow the steps below to set up the Python development environment and reproduc
 git clone https://github.com/chalasimon/solar-challenge-week1.git
 cd solar-challenge-week1
 ```
-### 2. Create a Virtual Environment
+### 2. Create and Activate Virtual Environment
 
 ```bash
 python -m venv venv
-source venv/bin/activate
+source venv/bin/activate (Linux/Mac) or venv\Scripts\activate (Windows)
 ```
 ### 3. Install Dependencies
 
