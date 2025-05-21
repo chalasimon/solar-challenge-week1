@@ -100,3 +100,36 @@ with col2:
         )
     else:
         st.write(filtered_data.groupby('country')[metric].agg(['mean', 'median','std']).reset_index())
+# Additional visualizations expander
+with st.expander("Advanced Visualizations"):
+    tab1, tab2 = st.tabs(["Scatter Plot", "Histogram"])
+    
+    with tab1:
+        st.subheader(f"{metric} vs. Temperature")
+        fig, ax = plt.subplots()
+        sns.scatterplot(
+            data=filtered_data,
+            x='Tamb',
+            y=metric,
+            hue='country',
+            palette='viridis',
+            alpha=0.6
+        )
+        st.pyplot(fig)
+    
+    with tab2:
+        st.subheader(f"{metric} Distribution")
+        fig, ax = plt.subplots()
+        sns.histplot(
+            data=filtered_data,
+            x=metric,
+            hue='country',
+            element='step',
+            kde=True,
+            palette='viridis'
+        )
+        st.pyplot(fig)
+
+# Footer
+st.markdown("---")
+st.markdown("**MoonLight Energy Solutions** - Solar Potential Analysis")
